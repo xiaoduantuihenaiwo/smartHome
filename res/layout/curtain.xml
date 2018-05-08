@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:stretchColumns="1">
+    
+    <TableRow 
+        android:id="@+id/tableRow1"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content">
+    	<Button 
+	        android:id="@+id/door_button1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background ="@drawable/arrow_back"
+	        android:onClick="backClick"/>
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableRow2"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_weight="1"
+    	android:gravity="center">
+    	<LinearLayout
+    	    android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    	    android:gravity="center"
+    	    android:orientation="vertical">
+    	    <RelativeLayout
+    	        android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button 
+			        android:id="@+id/curtain_button"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/curtain"
+			        android:onClick="curtainButtonClick"/>
+	   			<TextView
+			        android:id="@+id/curtain_state_text"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text = "@string/closed"
+			        android:background="#000000"
+			        android:textColor="#FFFFFF" /> 			 
+    	    </RelativeLayout>
+	    	<TextView
+				android:id="@+id/door_text1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text = "@string/curtain">
+	    	</TextView>
+    	</LinearLayout>
+    </TableRow>
+        	    		
+	    
+</TableLayout>

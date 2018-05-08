@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:stretchColumns="*"
+    android:background="#ffffff" >
+	<TableRow 
+	    android:id = "@+id/tableRow1"
+	    android:layout_width = "wrap_content"
+	    android:layout_height = "wrap_content"
+	    android:layout_weight = "1"
+	    android:gravity="center">
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:gravity="center">
+	        <Button
+		        android:id = "@+id/button1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:onClick = "doorClick"
+		        android:background ="@drawable/door"/>
+	        <TextView
+	            android:id="@+id/tvMainDoor"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="状态：关"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+		</LinearLayout>	   
+		 
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:gravity="center">
+	        <Button
+		        android:id = "@+id/button7"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:onClick = "airconditionClick"
+		        android:background ="@drawable/air"/>
+	        <TextView
+	            android:id="@+id/tvMainAir"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="状态：关"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	        
+	        <TextView
+			        android:id="@+id/air_text1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text = "@string/temperature"
+			        android:textColor="#000000" />
+	   			
+	   		<TextView
+			        android:id="@+id/air_text2"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text = "@string/humidity"
+
+			        android:textColor="#000000" />
+		</LinearLayout>	
+	</TableRow>
+	
+	<TableRow 
+	    android:id = "@+id/tableRow2"
+	    android:layout_width = "wrap_content"
+	    android:layout_height = "wrap_content"
+	    android:layout_weight = "1"
+	    android:gravity="center">
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:gravity="center">
+	        <Button
+		        android:id = "@+id/button3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:onClick = "curtainClick"
+		        android:background ="@drawable/curtain"/>
+	        <TextView
+	            android:id="@+id/tvMainCurtain"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="状态：关"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+		</LinearLayout>	    
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:gravity="center">
+	        <Button
+		        android:id = "@+id/button9"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:onClick = "lampClick"
+		        android:background ="@drawable/lamp"/>
+	        <TextView
+	            android:id="@+id/tvMainLamp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="状态：关"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+		</LinearLayout>	
+	</TableRow>
+	
+	<TableRow 
+	    android:id = "@+id/tableRow3"
+	    android:layout_width = "wrap_content"
+	    android:layout_height = "wrap_content"
+	    android:layout_weight = "1"
+	    android:gravity="center">
+	   <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:gravity="center">
+	        <Button
+		        android:id = "@+id/button5"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:onClick = "settingClick"
+		        android:background ="@drawable/config"/>
+
+		</LinearLayout>	    
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:gravity="center">
+	        <Button
+		        android:id = "@+id/button4"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:onClick = "exitClick"
+		        android:background ="@drawable/exit"/>
+
+		</LinearLayout>	
+	</TableRow>
+    	
+
+</TableLayout>
